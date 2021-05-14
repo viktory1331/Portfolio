@@ -1,0 +1,28 @@
+.jobBlock {
+  height: 100vh;
+  background-color: rgb(226, 199, 213);
+}
+
+.jobContainer {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  background-color: lightcyan;
+}
+
+.jobButton {
+  height: 50px;
+  width: 100px;
+  border-style: solid;
+  color: #fff;
+  border-width: 0;
+  background-color: #a02525;
+  border-radius: 0;
+  float: left;
+}

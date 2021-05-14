@@ -1,0 +1,28 @@
+.footerBlock {
+  height: 100vh;
+  background-color: rgb(209, 255, 253);
+  border: 1px solid red;
+}
+
+.footerContainer {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  border: 1px solid red;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div .icon {
+  background-color: palegreen;
+  height: 50px;
+  width: 50px;
+}

@@ -1,0 +1,38 @@
+.contactsBlock {
+  height: 100vh;
+  background-color: rgb(231, 197, 133);
+  border: 1px solid red;
+}
+
+.title {
+  background-color: rgb(141, 131, 22);
+}
+
+.contactsContainer {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.formContainer {
+  border: 1px solid red;
+}
+
+.form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsButton {
+  height: 50px;
+  width: 100px;
+  border-style: solid;
+  color: #fff;
+  border-width: 0;
+  background-color: #a02525;
+  border-radius: 0;
+  float: left;
+}

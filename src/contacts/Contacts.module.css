@@ -1,5 +1,4 @@
 .contactsBlock {
-  height: 100vh;
   background-color: rgb(231, 197, 133);
   border: 1px solid red;
 }
@@ -25,20 +24,23 @@
 }
 
 .inputElement {
-  height: 50%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 4px 10px;
 }
 
 .contactsButton {
-  height: 50px;
-  width: 100px;
-  border-style: solid;
   color: #fff;
-  border-width: 0;
   background-color: #a02525;
-  border-radius: 0;
-  float: left;
+  padding: 5px 20px;
+  border: 0;
+  outline: transparent;
+  width: max-content;
+  margin-bottom: 25px;
 }
 
 .textarea {
-  height: 50%;
+  padding: 4px 10px;
+  resize: none;
+  width: 100%;
 }

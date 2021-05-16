@@ -8,19 +8,19 @@
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   justify-content: center;
 }
 
 .icons {
   border: 1px solid red;
-  width: 500px;
+  width: 280px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+  
 div .icon {
   background-color: palegreen;
   height: 50px;

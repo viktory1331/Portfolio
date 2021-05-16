@@ -12,18 +12,20 @@
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.formContainer {
-  border: 1px solid red;
 }
 
 .form {
-  width: 350px;
+  border: 1px solid;
+  width: 280px;
+  height: 150px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputElement {
+  height: 50%;
 }
 
 .contactsButton {
@@ -35,4 +37,8 @@
   background-color: #a02525;
   border-radius: 0;
   float: left;
+}
+
+.textarea {
+  height: 50%;
 }

@@ -1,5 +1,4 @@
 .jobBlock {
-  height: 100vh;
   background-color: rgb(226, 199, 213);
 }
 
@@ -7,7 +6,6 @@
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   justify-content: center;
 }
@@ -18,12 +16,12 @@
 }
 
 .jobButton {
-  height: 50px;
-  width: 100px;
-  border-style: solid;
   color: #fff;
-  border-width: 0;
   background-color: #a02525;
-  border-radius: 0;
-  float: left;
+  padding: 5px 20px;
+  border: 0;
+  outline: transparent;
+  width: max-content;
+  margin-bottom: 25px;
+  
 }

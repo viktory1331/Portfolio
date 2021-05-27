@@ -1,18 +1,14 @@
-import React from 'react'
-import style from './Project.module.css'
+import React from 'react';
+import style from './Project.module.css';
 
-function Project (props) {
-   return (
-      <div className={style.project}>
-         <div className={style.photo}>
-            <button className={style.projectButton}>View</button>
-         </div>
-         <div className={style.descriptionContainer}>
-         <h3>{props.title}</h3>
-         <span className={style.spanText}>{props.description}</span>
-         </div>
+function Project(props) {
+  return (
+    <div className={style.project}>
+      <div className={style.projectPhotoContainer} style={props.style}>
+        <button className={style.projectButton} >View</button>
       </div>
-   )
+    </div>
+  );
 }
 
-export default Project
+export default Project;

@@ -1,0 +1,37 @@
+.projectsBlock {
+  background-color: #fff;
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .portfolioTitle {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #888;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+    .CreativeWorkstitle {
+      color: #101010;
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .projects {
+      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 544px) {
+        justify-content: center;
+      }
+    }
+  }
+}

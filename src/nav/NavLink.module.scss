@@ -1,0 +1,24 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.navLink {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    @include navlink-text-style(
+      0,
+      'Oswald',
+      400,
+      14px,
+      1.75em,
+      uppercase,
+      2px,
+      none
+    );
+    &:hover {
+      color: $primary-header-hover-text-color;
+    }
+  }
+}

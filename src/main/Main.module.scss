@@ -1,0 +1,52 @@
+@import '../common/styles/sass/variables.scss';
+
+.mainBlock {
+  background-image: url('http://duruthemes.com/demo/html/addo/black/images/slider.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .mainContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width: 644px) {
+      justify-content: center;
+    }
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('https://www.kartinki24.ru/uploads/gallery/main/434/kartinki24_ru_black_and_white_156.jpg');
+    }
+    .greeting {
+      width: 300px;
+      margin-bottom: 20px;
+      .myName {
+        font-size: 2.5rem;
+        color: $home-page-color;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        @media screen and (max-width: 644px) {
+          font-size: 30px;
+        }
+      }
+      .mySpecialization {
+        font-size: 27px;
+        line-height: 1.75em;
+        color: #fff;
+        font-family: 'Rambla', sans-serif;
+        font-weight: 700;
+        letter-spacing: -1px;
+        @media screen and (max-width: 644px) {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

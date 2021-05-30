@@ -7,3 +7,24 @@
   line-height: $lineHeight;
   color: $button-text-color;
 }
+
+@mixin navlink-text-style(
+  $padding,
+  $fontFamily,
+  $fontWeight,
+  $fontSize,
+  $lineHeight,
+  $textTransform,
+  $letterSpacing,
+  $textDecoration
+) {
+  padding: $padding;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-transform: $textTransform;
+  letter-spacing: $letterSpacing;
+  text-decoration: $textDecoration;
+  color: $primary-header-grey-text-color;
+}

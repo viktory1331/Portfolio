@@ -1,0 +1,32 @@
+@import '../../common/styles/sass/variables.scss';
+
+.skill {
+  width: 250px;
+  border: 1px solid $primety-light-grey-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  .icon {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(216, 238, 93);
+  }
+  .title {
+    font-weight: 700;
+    color: $primary-color;
+    font-size: 18px;
+    font-family: 'Rambla', sans-serif;
+  }
+  .description {
+    font-family: 'Rambla', sans-serif;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    color: #888;
+    margin: 0 0 20px;
+  }
+}

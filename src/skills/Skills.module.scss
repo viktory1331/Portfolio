@@ -1,0 +1,33 @@
+@import '../common/styles/sass/variables.scss';
+
+.skillsBlock {
+  background-color: $primary-grey-color;
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    .title {
+      color: $primary-color;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @media screen and (max-width: 544px) {
+        justify-content: center;
+      }
+      // @media screen and (max-width: 1045px) {
+      //   flex-wrap: wrap;
+      // }
+      // @media screen and (max-width: 785px) {
+      //   flex-wrap: wrap;
+      // }
+    }
+  }
+}

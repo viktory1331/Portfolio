@@ -1,0 +1,44 @@
+@import '../common/styles/sass/variables.scss';
+
+.footerBlock {
+  background-color: $primary-grey-color;
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    .title {
+      color: #101010;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      line-height: 1.75em;
+      margin: 0 0 10px 0;
+    }
+    .icons {
+      width: 280px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    div .icon {
+      margin-top: 10px;
+      height: 50px;
+      width: 50px;
+      color: black;
+      transition: 0.5s all;
+      &:hover {
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+    }
+    .reserved {
+      margin: 0;
+      font-size: 14px;
+      line-height: 2em;
+      color: #101010;
+      font-family: 'Rambla', sans-serif;
+      margin-bottom: 20px;
+    }
+  }
+}

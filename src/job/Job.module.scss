@@ -16,23 +16,28 @@
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-    .jobButton {
-      color: $button-text-color;
-      padding: 5px 20px;
-      border: 0;
-      outline: transparent;
-      width: max-content;
-      margin-bottom: 25px;
-      font-family: 'Rambla', sans-serif;
-      font-size: 16px;
-      line-height: 1.75;
-      font-weight: 400;
-      border-style: solid;
-      border-width: 0;
-      background-color: $button-bg-color;
-      margin-top: 10px;
-      border-radius: 0;
-      float: left;
+    .buttonsContainer {
+      margin-bottom: 20px;
+      .jobButton {
+        color: $button-text-color;
+        padding: 5px 20px;
+        border: 0;
+        outline: transparent;
+        width: max-content;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-family: 'Rambla', sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        font-weight: 400;
+        border-style: solid;
+        border-width: 0;
+        background-color: $button-bg-color;
+        border-radius: 0;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
     }
   }
 }

@@ -10,10 +10,10 @@
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  margin: 0 auto;
   .icon {
     height: 60px;
     width: 60px;
-    background-color: rgb(216, 238, 93);
   }
   .title {
     font-weight: 700;
@@ -26,7 +26,7 @@
     font-size: 15px;
     line-height: 1.75em;
     font-weight: 400;
-    color: #888;
+    color: $palette-paragraph;
     margin: 0 0 20px;
   }
 }

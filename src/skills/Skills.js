@@ -2,6 +2,10 @@ import React from 'react';
 import style from './Skills.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Skill from './skill/Skill';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 function Skills() {
   return (
@@ -10,27 +14,31 @@ function Skills() {
         <h2 className={style.title}>MY SKILLS</h2>
         <div className={style.skills}>
           <Skill
-            title={'React / Redux / Thunk'}
+            icon={['fab', 'html5']}
+            title={'HTML5'}
             description={
-              'Fusce suscipit, ante a hendrerit thelery ullamcorper, risus nisl cursus purus the viverra ante nulla vel justo.'
+              'The correct use of block names with tags to create semantic layout. Using html to create any blocks on the site.'
             }
           />
           <Skill
-            title={'JS(ES6+) / TypeScript'}
+            icon={['fab', 'css3']}
+            title={'CSS3'}
             description={
-              'Fusce suscipit, ante a hendrerit thelery ullamcorper, risus nisl cursus purus the viverra ante nulla vel justo.'
+              'The use of CSS to style the site, also cross-browser layout, semantic layout, Material UI. Using a variety of libraries and animations.'
             }
           />
           <Skill
-            title={'HTML / CSS / SASS'}
+            icon={['fab', 'js-square']}
+            title={'JavaScript'}
             description={
-              'Fusce suscipit, ante a hendrerit thelery ullamcorper, risus nisl cursus purus the viverra ante nulla vel justo.'
+              'Using JavaScript to write logic. Understanding the structure of the tree virtual DOM. knowledge of the principles of object-oriented programming.'
             }
           />
           <Skill
-            title={'TDD / Storybook / GIT'}
+            icon={['fab', 'react']}
+            title={'React'}
             description={
-              'Fusce suscipit, ante a hendrerit thelery ullamcorper, risus nisl cursus purus the viverra ante nulla vel justo.'
+              'Using the React.js library to write applications. FLUX Cycle, HOC, REST API, react-redux, AJAX, axios. Understanding the component life cycle and asynchronous queries and operations.'
             }
           />
         </div>

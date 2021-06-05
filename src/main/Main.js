@@ -1,10 +1,15 @@
 import React from 'react';
 import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
+import background from '../assets/image/background.jpg';
 
-function Main() {
+function Main(props) {
+  const backgroundImg = {
+    backgroundImage: `url(${background})`,
+  };
+
   return (
-    <div className={style.mainBlock}>
+    <div className={style.mainBlock} style={backgroundImg}>
       <div className={`${styleContainer.container} ${style.mainContainer}`}>
         <div className={style.photo}></div>
         <div className={style.greeting}>

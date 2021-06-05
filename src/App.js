@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
 import Contacts from './contacts/Contacts';
 import Footer from './footer/Footer';
@@ -14,8 +14,8 @@ function App() {
       <Header />
       <Main />
       <Skills />
-      <Projects/>
-      <Job/>
+      <Projects />
+      <Job />
       <Contacts />
       <Footer />
     </div>

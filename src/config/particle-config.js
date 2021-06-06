@@ -1,10 +1,10 @@
 const particleConfig = {
   particles: {
     number: {
-      value: 147,
+      value: 90,
       density: {
-        enable: true,
-        value_area: 710.2328774690454,
+        enable: false,
+        value_area: 1025.8919341219544,
       },
     },
     color: {

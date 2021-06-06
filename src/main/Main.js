@@ -16,9 +16,9 @@ function Main(props) {
 
   return (
     <div className={style.mainBlock} style={backgroundImg}>
+      <ParticleBackground  />
       <div className={`${styleContainer.container} ${style.mainContainer}`}>
         <div className={style.photo} style={myPhoto}></div>
-        {/* <ParticleBackground /> */}
         <div className={style.greeting}>
           <h1 className={style.myName}>Fedosowa Victoria</h1>
           <h2 className={style.mySpecialization}>I'm front-end developer</h2>

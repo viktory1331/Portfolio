@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Job.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
+import MyCV from '../CV/CV.pdf'
 
 function Job() {
   return (
@@ -8,8 +9,12 @@ function Job() {
       <div className={`${styleContainer.container} ${style.jobContainer}`}>
         <h2 className={style.title}>I am considering remote work options</h2>
         <div className={style.buttonsContainer}>
-          <button className={style.jobButton}>Hire me</button>
-          <button className={style.jobButton}>Download CV</button>
+          <button className={style.jobButton}>
+            <a href="https://t.me/smyatanok" target="_blank">
+              Hire me
+            </a>
+          </button>
+          <button className={style.jobButton}><a href={MyCV} download="My_File.pdf">Download CV</a></button>
         </div>
       </div>
     </div>

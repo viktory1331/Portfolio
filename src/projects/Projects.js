@@ -23,9 +23,18 @@ function Projects() {
         <span className={style.portfolioTitle}>Portfolio</span>
         <h2 className={style.CreativeWorkstitle}>Creative Works</h2>
         <div className={style.projects}>
-          <Project style={social} />
-          <Project style={todoLists} />
-          <Project style={gymPicture} />
+          <Project
+            style={social}
+            linkName={'https://github.com/viktory1331/SocialNetworks'}
+          />
+          <Project
+            style={todoLists}
+            linkName={'https://github.com/viktory1331/Trello-analog'}
+          />
+          <Project
+            style={gymPicture}
+            linkName={'https://github.com/viktory1331/Atletic-City-prototype- q'}
+          />
         </div>
       </div>
     </div>

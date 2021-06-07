@@ -17,7 +17,9 @@ function Project(props) {
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
         >
-          View
+          <a href={props.linkName} target="_blank">
+            View
+          </a>
         </button>
       </div>
     </div>

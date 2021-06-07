@@ -33,7 +33,7 @@ function Projects() {
           />
           <Project
             style={gymPicture}
-            linkName={'https://github.com/viktory1331/Atletic-City-prototype- q'}
+            linkName={'https://github.com/viktory1331/Atletic-City-prototype-'}
           />
         </div>
       </div>

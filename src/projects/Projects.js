@@ -2,20 +2,19 @@ import React from 'react';
 import style from './Projects.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Project from './project/Project';
-import blueLamp from './../assets/image/blueLamp.jpg';
-import greenFlower from './../assets/image/greenFlower.jpg';
-import greenSigarets from './../assets/image/greenSigarets.jpg';
-
+import socialNetwork from './../assets/image/socialNetwork.jpg';
+import todo from './../assets/image/todo.jpg';
+import gym from './../assets/image/gym.png';
 
 function Projects() {
-  const lamp = {
-    backgroundImage: `url(${blueLamp})`,
+  const social = {
+    backgroundImage: `url(${socialNetwork})`,
   };
-  const green = {
-    backgroundImage: `url(${greenFlower})`,
+  const todoLists = {
+    backgroundImage: `url(${todo})`,
   };
-  const sigarets = {
-    backgroundImage: `url(${greenSigarets})`,
+  const gymPicture = {
+    backgroundImage: `url(${gym})`,
   };
 
   return (
@@ -24,9 +23,9 @@ function Projects() {
         <span className={style.portfolioTitle}>Portfolio</span>
         <h2 className={style.CreativeWorkstitle}>Creative Works</h2>
         <div className={style.projects}>
-          <Project style={lamp} />
-          <Project style={green} />
-          <Project style={sigarets} />
+          <Project style={social} />
+          <Project style={todoLists} />
+          <Project style={gymPicture} />
         </div>
       </div>
     </div>

@@ -39,5 +39,9 @@
       position: absolute;
       z-index: 1;
     }
+    a {
+      color: $primary-link-color;
+      text-decoration: none;
+    }
   }
 }

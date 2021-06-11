@@ -9,7 +9,7 @@ library.add(fab);
 
 function Skills() {
   return (
-    <div className={style.skillsBlock}>
+    <div id="Skills" className={style.skillsBlock}>
       <div className={`${styleContainer.container} ${style.skillsContainer}`}>
         <h2 className={style.title}>MY SKILLS</h2>
         <div className={style.skills}>

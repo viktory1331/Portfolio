@@ -5,6 +5,7 @@
   width: 300px;
   display: flex;
   justify-content: space-between;
+  margin-right: 20px;
   a {
     @include navlink-text-style(
       0,
@@ -22,5 +23,8 @@
   }
   .active {
     color: $primary-header-hover-text-color;
+  }
+  @media screen and (max-width: 442px) {
+    margin-right: 0;
   }
 }

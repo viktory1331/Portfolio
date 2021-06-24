@@ -26,7 +26,7 @@ function Contacts() {
   }
 
   return (
-    <div className={style.contactsBlock} id='Contacts'>
+    <div className={style.contactsBlock} id="Contacts">
       <div className={`${styleContainer.container} ${style.contactsContainer}`}>
         <h2 className={style.title}>Get in touch</h2>
         <form className={style.form} method={'post'} onSubmit={sendEmail}>

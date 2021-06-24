@@ -42,6 +42,9 @@
     a {
       color: $primary-link-color;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

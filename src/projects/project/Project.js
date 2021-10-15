@@ -1,24 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './Project.module.scss';
 
 function Project(props) {
-  const [isHover, setIsHover] = useState(false);
-
   return (
     <div className={style.project}>
-      <div
-        className={`${style.projectPhotoContainer} ${
-          isHover ? style.isHover : ''
-        }`}
-        style={props.style}
-      >
-        <button
-          className={style.projectButton}
-          onMouseEnter={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
-        >
-          <a href={props.linkName} target="_blank">
-            View
+      <div className={style.projectPhotoContainer} style={props.style} />
+      <div className={style.info}>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+        <button>
+          <a href={props.linkName} target="_blank" rel="noreferrer">
+            VIEW PROJECT
           </a>
         </button>
       </div>

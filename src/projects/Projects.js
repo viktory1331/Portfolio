@@ -2,13 +2,16 @@ import React from 'react';
 import style from './Projects.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Project from './project/Project';
-import socialNetwork from './../assets/image/socialNetwork.jpg';
-import todo from './../assets/image/todo.jpg';
-import gym from './../assets/image/gym.png';
+import social from './../assets/images/social.png';
+import todo from './../assets/images/todo.jpg';
+import gym from './../assets/images/gym.jpg';
+import login from './../assets/images/login.jpg';
+import future from './../assets/images/future.jpg';
+import futureSecond from './../assets/images/futureSecond.jpg';
 
 function Projects() {
-  const social = {
-    backgroundImage: `url(${socialNetwork})`,
+  const socialNetwork = {
+    backgroundImage: `url(${social})`,
   };
   const todoLists = {
     backgroundImage: `url(${todo})`,
@@ -16,7 +19,16 @@ function Projects() {
   const gymPicture = {
     backgroundImage: `url(${gym})`,
   };
-
+  const logIn = {
+    backgroundImage: `url(${login})`,
+  };
+  const futureProject = {
+    backgroundImage: `url(${future})`
+  };
+  const futureSecondProject = {
+    backgroundImage: `url(${futureSecond})`
+  }
+ 
   return (
     <div className={style.projectsBlock} id="Projects">
       <div className={`${styleContainer.container} ${style.projectsContainer}`}>
@@ -24,16 +36,40 @@ function Projects() {
         <h2 className={style.CreativeWorkstitle}>Creative Works</h2>
         <div className={style.projects}>
           <Project
-            style={social}
+            title={'ToDo List'}
+            description={'TS, Redux, RestAPI, Thunk,Material UI, Unit Tests'}
+            style={todoLists}
+            linkName={' https://github.com/viktory1331/Trello-analog'}
+          />
+          <Project
+            title={'The Social Network'}
+            description={'TS, Redux, RestAPI, Thunk, Unit Tests'}
+            style={socialNetwork}
             linkName={'https://github.com/viktory1331/SocialNetworks'}
           />
           <Project
-            style={todoLists}
-            linkName={'https://github.com/viktory1331/Trello-analog'}
-          />
-          <Project
+            title={'Gym Prototype'}
+            description={'AXURE'}
             style={gymPicture}
             linkName={'https://github.com/viktory1331/Atletic-City-prototype-'}
+          />
+          <Project
+            title={'SignUp Form'}
+            description={'TS, React, React Hook Form'}
+            style={logIn}
+            linkName={'https://github.com/viktory1331/SignUp-Form'}
+          />
+          <Project
+            title={'Future Project'}
+            description={'...in progress'}
+            style={futureProject}
+            linkName={'https://github.com/viktory1331/link%20#2'}
+          />
+          <Project
+            title={'Futer Project'}
+            description={'...in progress'}
+            style={futureSecondProject}
+            linkName={'https://github.com/viktory1331/link%20#2'}
           />
         </div>
       </div>

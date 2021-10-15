@@ -2,29 +2,41 @@
 @import '../common/styles/sass/mixins.scss';
 
 .navLink {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
+
+  @media screen and (max-width: 588px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 420px;
+  }
+
   a {
     @include navlink-text-style(
       0,
-      'Oswald',
-      400,
-      14px,
-      1.75em,
+      'Poppins',
+      500,
+      18px,
+      1.2em,
       uppercase,
       2px,
       none
     );
+    color: $cod-gray;
+
     &:hover {
-      color: $primary-header-hover-text-color;
+      color: $red-orange;
+    }
+
+    @media screen and (max-width: 558px) {
+      font-size: 12px;
     }
   }
+  
   .active {
-    color: $primary-header-hover-text-color;
-  }
-  @media screen and (max-width: 442px) {
-    margin-right: 0;
+    color: $red-orange;
   }
 }

@@ -2,14 +2,18 @@
 
 .header {
   height: 80px;
-  background-color: $primary-black-header-color;
+  background-color: $white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: sticky;
   z-index: 2;
   top: 0;
-  @media screen and (max-width: 442px) {
+  padding: 0 20px 0 0;
+
+  @media screen and (max-width: 768px) {
     justify-content: center;
+    align-items: center;
+    padding: 0 20px;
   }
 }

@@ -10,7 +10,7 @@ function Job() {
         <h2 className={style.title}>I am considering remote work options</h2>
         <div className={style.buttonsContainer}>
           <button className={style.jobButton}>
-            <a href="https://t.me/smyatanok" target="_blank">
+            <a href="https://t.me/myatasmyatana" target="_blank" rel="noreferrer">
               Hire me
             </a>
           </button>

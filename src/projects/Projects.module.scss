@@ -1,38 +1,48 @@
+@import '../common/styles/sass/variables.scss';
+
 .projectsBlock {
-  background-color: #fff;
+  background-color: $white;
+
   .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
+
     .portfolioTitle {
-      display: block;
-      font-family: 'Oswald', sans-serif;
-      font-size: 12px;
       text-transform: uppercase;
-      color: #888;
-      font-weight: 400;
-      letter-spacing: 5px;
-    }
-    .CreativeWorkstitle {
-      color: #101010;
-      font-family: 'Oswald', sans-serif;
-      margin-bottom: 30px;
+      display: inline-block;
+      margin-bottom: 10px;
+      color: $red-orange;
       font-weight: 500;
-      font-size: 30px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
     }
+
+    .CreativeWorkstitle {
+      font-weight: 600;
+      color: $cod-gray;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-family: 'Poppins';
+      color: $cod-gray;
+      margin: 0 0 20px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+
     .projects {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
+
       @media screen and (max-width: 899px) {
         grid-template-columns: 1fr 1fr;
         grid-column-start: 1;
         grid-column-end: 3;
       }
+      
       @media screen and (max-width: 588px) {
         grid-template-columns: 1fr;
       }

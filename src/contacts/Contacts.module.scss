@@ -1,51 +1,62 @@
 @import '../common/styles/sass/variables.scss';
 
 .contactsBlock {
-  background-color: $primary-white-color;
+  background-color: $white;
+
   .contactsContainer {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+
     .title {
-      color: $primary-color;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 500;
-      font-size: 30px;
-      letter-spacing: 3px;
+      text-align: center;
+      font-weight: 600;
       text-transform: uppercase;
+      line-height: 1.2;
+      font-family: 'Poppins';
+      color: $cod-gray;
+      margin: 0 0 20px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
     }
+
     .form {
-      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       position: relative;
+
       .inputContainer {
         display: flex;
         width: 100%;
         justify-content: space-between;
         padding-bottom: 20px;
+
         .inputElement1 {
           width: 49%;
           height: 40px;
           padding: 6px 15px;
           box-shadow: none;
           border: none;
-          background: $primary-input-light-grey-color;
-          color: $primary-color;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: transparent;
           font-family: Heebo, sans-serif;
           font-size: 1rem;
           font-weight: 400;
           outline: none;
           box-sizing: border-box;
         }
+
         .inputElement2 {
           width: 49%;
           height: 40px;
           padding: 6px 15px;
           box-shadow: none;
           border: none;
-          background: $primary-input-light-grey-color;
-          color: $primary-color;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: transparent;
           font-family: Heebo, sans-serif;
           font-size: 1rem;
           font-weight: 400;
@@ -53,13 +64,14 @@
           box-sizing: border-box;
         }
       }
+
       .textarea {
         width: 100%;
         resize: none;
         box-shadow: none;
         border: none;
-        background: $primary-input-light-grey-color;
-        color: $primary-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent;
         height: 150px;
         padding: 15px;
         font-family: Heebo, sans-serif;
@@ -67,12 +79,12 @@
         font-weight: 400;
         outline: none;
         box-sizing: border-box;
+        margin-bottom: 30px;
       }
     }
+    
     .contactsButton {
-      margin-top: 40px;
-      margin-bottom: 40px;
-      color: $button-text-color;
+      color: $white;
       padding: 5px 20px;
       border: 0;
       outline: transparent;
@@ -84,11 +96,12 @@
       font-weight: 400;
       border-style: solid;
       border-width: 0;
-      background-color: $button-bg-color;
+      background-color: $red-orange;
       border-radius: 0;
       float: left;
-      &:active {
-        text-decoration: underline;
+
+      &:hover {
+        background-color: $cod-gray;
       }
     }
   }

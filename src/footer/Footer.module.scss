@@ -1,44 +1,42 @@
 @import '../common/styles/sass/variables.scss';
 
 .footerBlock {
-  background-color: $primary-grey-color;
+  background-color: $alabaster;
+
   .footerContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+
     .title {
-      color: #101010;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 500;
-      line-height: 1.75em;
-      margin: 0 0 10px 0;
+      text-align: center;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-family: 'Poppins';
+      color: $cod-gray;
+      margin: 0 0 20px;
     }
-    .icons {
-      width: 280px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    div .icon {
-      margin-top: 10px;
-      height: 50px;
-      width: 50px;
-      color: black;
+
+    .link {
+      color: $cod-gray;
       transition: 0.5s all;
+      text-decoration: none;
+
       &:hover {
-        opacity: 0.3;
+        color: $red-orange;
         transition: all 0.3s;
       }
     }
+    
     .reserved {
       margin: 0;
       font-size: 14px;
       line-height: 2em;
-      color: #101010;
-      font-family: 'Rambla', sans-serif;
-      margin-bottom: 20px;
+      color: $cod-gray;
+      font-family: 'Poppins';
     }
   }
 }

@@ -2,63 +2,107 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .project {
-  width: 250px;
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: $white;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba($cod-gray, 0.5);
+  margin-bottom: 50px;
 
-  &:nth-child(3) {
-    @media screen and (max-width: 899px) {
-      grid-column-start: 1;
-      grid-column-end: 3;
+  &:hover {
+    transform: translateY(20px);
+
+    .info {
+      opacity: 1;
+      transform: translateY(0px);
     }
 
-    @media screen and (max-width: 588px) {
-      grid-column: auto;
+    &:before {
+      opacity: 1;
     }
+  }
+
+  & &:hover {
+    transform: translateY(20px);
+
+    &:before {
+      opacity: 1;
+
+      .info {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba($cod-gray, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
   }
 
   .projectPhotoContainer {
     width: 100%;
-    height: 250px;
-    background-size: cover;
+    height: 100%;
+    object-fit: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+
+  .info {
     position: relative;
+    z-index: 3;
+    @include text-button('Poppins', 16px, 500, 1.75em);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
 
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: $before-bg-color;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: all 0.15s ease-out;
+    h1 {
+      margin: 0px;
     }
 
-    &.isHover::before {
-      background-color: $before-bg-color-hover;
+    p {
+      letter-spacing: 1px;
+      font-size: 15px;
+      margin-top: 8px;
     }
 
-    .projectButton {
-      @include text-button('Rambla, sans-serif', 16px, 400, 1.75em);
+    button {
+      @include text-button('Poppins', 16px, 400, 1.75em);
+      padding: 0.6rem;
+      outline: none;
       border: none;
-      -webkit-transition: background-color 0.15s ease-out;
-      transition: background-color 0.15s ease-out;
-      background-color: $button-bg-color;
-      position: absolute;
-      z-index: 1;
-    }
-    a {
-      color: $primary-link-color;
-      text-decoration: none;
+      border-radius: 3px;
+      background: $red-orange;
+      color: $white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s ease;
+
       &:hover {
-        text-decoration: underline;
+        background-color: $cod-gray;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
       }
     }
   }

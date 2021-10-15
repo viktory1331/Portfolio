@@ -11,7 +11,8 @@ function Skills() {
   return (
     <div id="Skills" className={style.skillsBlock}>
       <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-        <h2 className={style.title}>MY SKILLS</h2>
+        <span className={style.skillTitle}>Skills</span>
+        <h2 className={style.title}>programming Skills</h2>
         <div className={style.skills}>
           <Skill
             icon={['fab', 'html5']}

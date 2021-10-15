@@ -1,56 +1,64 @@
 @import '../common/styles/sass/variables.scss';
 
 .mainBlock {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  .mainParticles {
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 50px;
+
+  @media screen and(max-width: 768px) {
+    padding: 10px;
   }
+
   .mainContainer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    @media screen and (max-width: 644px) {
-      justify-content: center;
-    }
-    .photo {
-      width: 200px;
-      height: 200px;
-      border-radius: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .greeting {
-      width: 300px;
-      margin-bottom: 20px;
-      .myName {
-        font-size: 2.5rem;
-        color: $home-page-color;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 500;
-        @media screen and (max-width: 644px) {
-          font-size: 30px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .mainGreeting {
+      width: 500px;
+      text-align: left;
+
+      h5 {
+        color: $red-orange;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 1px;
+        margin: 0 0 15px;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+          font-size: 13px;
+          font-weight: 500;
         }
       }
-      .mySpecialization {
-        font-size: 27px;
-        line-height: 1.75em;
-        color: #fff;
-        font-family: 'Rambla', sans-serif;
-        font-weight: 700;
-        letter-spacing: -1px;
-        @media screen and (max-width: 644px) {
-          font-size: 25px;
+
+      h1 {
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 1.4;
+        text-transform: uppercase;
+        font-family: 'Poppins';
+        color: $cod-gray;
+
+        @media screen and (max-width: 768px) {
+          font-weight: 700;
+          font-size: 15px;
         }
+      }
+    }
+
+    .mainPhoto {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+
+      img {
+        height: auto;
+        width: 100%;
+        max-width: 720px;
       }
     }
   }

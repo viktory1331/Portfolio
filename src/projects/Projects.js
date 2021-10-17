@@ -60,10 +60,10 @@ function Projects() {
             linkName={'https://github.com/viktory1331/SignUp-Form'}
           />
           <Project
-            title={'Future Project'}
-            description={'...in progress'}
+            title={'Counter'}
+            description={'My first project with React/Redux/TS  .I left It here as a memory.'}
             style={futureProject}
-            linkName={'https://github.com/viktory1331/link%20#2'}
+            linkName={'https://github.com/viktory1331/Counter'}
           />
           <Project
             title={'Futer Project'}
